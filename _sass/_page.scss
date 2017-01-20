@@ -20,7 +20,25 @@
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0.5 of 12);
+  }
+
+  .page__inner-wrap {
+    @include full();
+
+    .page__content,
+    .page__meta,
+    .page__share {
+      @include full();
+    }
+  }
+}
+
+.page_wide {
+  @include breakpoint($large) {
+    @include span(12 of 12 last);
+    @include prefix(1.5 of 12);
+    @include suffix(1.5 of 12);
   }
 
   .page__inner-wrap {
@@ -56,12 +74,13 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: $type-size-6;
   }
 
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    text-align: justify;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
