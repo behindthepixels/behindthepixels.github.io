@@ -18,6 +18,7 @@ Across graphics, audio, video, and physics, the NVIDIA VRWorks suite of technolo
 **Takeaway:** Attendees will gain an understanding of the unique challenges of real-time VR gaming and insight into the VRWorks suite of technologies.
 
 [GDC Website](http://schedule.gdconf.com/session/accelerating-your-vr-games-with-vrworks-presented-by-nvidia)
+
 ---
 
 ### High-Performance, Low-Overhead Rendering with OpenGL and Vulkan
