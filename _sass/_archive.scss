@@ -83,6 +83,23 @@
    ========================================================================== */
 
 .list__item {
+  
+  .archive__item-teaser {
+    @include span(5 of 12);
+  }
+
+  .archive__item-title {
+    @include span(7 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(1 of 12);
+  }
+  
+  .archive__item-excerpt {
+    @include span(7 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(1 of 12);
+  }
+
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }

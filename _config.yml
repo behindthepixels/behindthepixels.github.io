@@ -14,7 +14,7 @@ description              : "Focus on Computer Graphics and Computer Vision."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/edxray/TeapotLens1.0.jpg"
+teaser                   : # "/assets/images/edxray/TeapotLens1.0.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:

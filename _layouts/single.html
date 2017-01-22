@@ -12,6 +12,11 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.header.teaser %}
+  {% capture teaser %}{{ page.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -24,6 +29,20 @@ layout: default
       {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
       {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
       {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+      
+      {% if teaser %}
+        <div class="align-center">
+          <img src=
+            {% if teaser contains "://" %}
+              "{{ teaser }}"
+            {% else %}
+              "{{ teaser | absolute_url }}"
+            {% endif %}
+            alt="">
+        </div>
+        <hr>
+      {% endif %}
 
       <div class="page__inner-wrap">
         {% unless page.header.overlay_color or page.header.overlay_image %}
