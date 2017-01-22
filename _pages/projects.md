@@ -7,8 +7,6 @@ header:
   overlay_image: /assets/images/Header1.jpg
   caption: 'Rendered with EDXRay'
 excerpt: 'Focus on Computer Graphics and Computer Vision.'
-intro: 
-  - excerpt: 'This page lists several interesting projects developed independently by Edward Liu.'
 feature_row1:
   - image_path: /assets/images/edxray/San Miguel 2nd Fl.jpg
     title: "EDXRay"
@@ -31,8 +29,6 @@ feature_row3:
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 ---
-
-{% include feature_row id="intro" type="center" %}
 
 {% include feature_row id="feature_row1" type="left" %}
 
