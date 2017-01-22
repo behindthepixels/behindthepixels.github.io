@@ -33,14 +33,18 @@ layout: default
       
       {% if teaser %}
         <div class="align-center">
-          <img src=
-            {% if teaser contains "://" %}
-              "{{ teaser }}"
-            {% else %}
-              "{{ teaser | absolute_url }}"
-            {% endif %}
-            alt="">
+          <figure style="margin: 0;">
+            <img src=
+              {% if teaser contains "://" %}
+                "{{ teaser }}"
+              {% else %}
+                "{{ teaser | absolute_url }}"
+              {% endif %}
+              alt="">
+          </figure>
         </div>
+        
+        {% include author-profile-small.html %}
         <hr>
       {% endif %}
 
