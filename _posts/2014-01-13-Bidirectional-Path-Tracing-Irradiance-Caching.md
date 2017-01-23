@@ -44,7 +44,10 @@ Additionally, because bidirectional path tracing (BDPT) with multiple importance
 
 I am quite happy with the result. And I personally haven't seen this rendering approach (evaluating irradiance with BDPT in irradiance cache) used in other renderers such as mitsuba, luxray. Probably because caustics can be handled even better by photon mapping. The image below was renderred with irradiance caching, even bidirectional path tracing was used to calculate irradiance, the caustics area below the glass ball still has blotchy artifacts. This is due to caustics is a special form of indirect light that changes quickly over the surface, thus making it not as suitable for interpolation.
 
-{% include figure image_path="/assets/images/bidir_irradiance_cache/image_6.jpg" alt="" caption="" %}{: .align-center }
+<figure style="width: 484px" class="align-center">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_6.jpg" alt="">
+  <figcaption>Even bidirectional path tracing would fail to efficiently render the caustics below the glass sphere, due to it's not suitable for interpolation.</figcaption>
+</figure> 
 
 When BDPT is used with irradiance caching, it's essential that it has all kinds of path sampling techniques. Just like explicitly connecting light vertices to camera lens is important for rendering caustics in normal path tracing (because caustics can be sampled much more easily by light tracing), here connecting light vertices to irradiance sample location is also important to make the algorithm work efficiently.
 
@@ -52,11 +55,9 @@ The next step is to use gradient information of irradiance to do more accurate i
 
 Lastly, I will post one more image rendered with my irradiance cache integrator, also 4096 bidirectional path samples were used to get irradiance samples. Just for fun, I also did another rendering just visualizing the indirect lighting in the same scene.
 
-![image alt text](/assets/images/bidir_irradiance_cache/image_7.jpg){: .align-center }
+{% include figure image_path="/assets/images/bidir_irradiance_cache/image_7.jpg" alt="" caption="Sponza scene renderer with irradiance caching, 5000 path tracing samples used at each irradiance sample location." %}{: .align-center }
+{% include figure image_path="/assets/images/bidir_irradiance_cache/image_8.jpg" alt="" caption="Same image as above, also showing the interpolated indirect lighting." %}{: .align-center }
 
-Sponza scene renderer with irradiance caching, 5000 path tracing samples used at each irradiance sample location
 
-![image alt text](/assets/images/bidir_irradiance_cache/image_8.jpg){: .align-center }
 
-Same image as above, also showing the interpolated indirect lighting.
 
