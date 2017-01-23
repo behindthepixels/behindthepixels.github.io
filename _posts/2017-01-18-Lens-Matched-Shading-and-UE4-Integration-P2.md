@@ -1,7 +1,7 @@
 ---
 title: "Lens Matched Shading and Unreal Engine 4 Integration (Part 2)"
 header:
-  teaser: "/assets/images/lms_posts/teaser2.jpg"
+  teaser: "/assets/images/lms_posts/teaser2.png"
 tags:
   - Virtual Reality
   - Unreal Engine
@@ -18,13 +18,13 @@ The source code is available to all registered UE4 developers at [https://github
 
 Lens Matched Shading is exposed in UE4 via a renderer property that you will need to enable within your project in order to make it available in the game.. You can find the property setting in the editor menu by following Edit->Project Settings->Engine->Rendering->VR and checking "Lens Matched Rendering", as shown in the figure below. Beware that enabling this property will force you to restart the engine and recompile many of the shaders to enable the new support. Once the render property is enabled, you can switch the LMS configuration at any time using the console variable  “vr.LensMatchedShadingRendering” and 1, 2 and 3 select from the Quality, Conservative and Aggressive presets described above.
 
-![image alt text](image_8.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_8.png){: .align-center}
 
 ## Integration Overview
 
 The renderer in Unreal Engine 4 uses deferred shading (note : the new forward shading path added in release 4.14 is out of the scope of this post, though the general strategy of integration stays the same). Integrating LMS into a deferred renderer is fairly simple : *w* scaling is applied during the GBuffer base pass, which turns all the layers into an octagon shape. Then all shading, lighting, screen space effects (SSAO, SSR) and post processing should ideally be done within the octagon shaped region. Finally, at the end of the rendering pipeline, after all passes have been completed, a full screen resampling operation is performed to unwarp the shaded octagon buffer back to a rectangle for display.
 
-![image alt text](image_9.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_9.png){: .align-center}
 
 This way most of the shading and pixel processing is done in the area of the octagon, which is much smaller than the full rectangle, as explained in the pre-set configuration section.
 
@@ -40,7 +40,7 @@ The following figure demonstrates the remapped screen space uv coordinates with 
 
 In the later text, I will refer to coordinate space as linear space if the space fills the entire rectangularly shaped buffer. And I will refer it as LMS space if it fills only an octagon (or two, in the case of stereo), like shown below.
 
-![image alt text](image_10.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_10.png){: .align-center}
 
 ## Infrastructure Support
 
@@ -135,7 +135,7 @@ In additional to physically based shading and lighting, the UE4 renderer relies 
 
 A naive way to do this is to still render a full view quad, but use either the depth or stencil buffer to kill pixels that are outside of the octagon. The downside to this approach is that we would need to bind the depth buffer for a lot of the passes which originally did not have it bound. Similarly, other passes already rely on the stencil buffer for other purposes, preventing us from using it. What we did instead, is directly render an octagon that covers the same area of pixels in the GBuffer directly.
 
-![image alt text](image_11.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_11.png){: .align-center}
 
 Figure: the octagon is not warping the linear space at all, it simply carves out an octagon shaped region from the linear space so we can use it to directly access the GBuffer.
 
@@ -163,7 +163,7 @@ For both types of render passes, shaders need to be aware of LMS space and remap
 
 Getting modified w mode to work in the base pass is quite straightforward. With the infrastructure and RHI support we’ve built, all that needs to be done is modify the SetupBasePassView to set up the multiple viewports and scissors as well as calling RHISetModifiedWMode, as mentioned previously. The resulting GBuffers should look like the following.
 
-![image alt text](image_12.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_12.png){: .align-center}
 
 On the shader side, base pass pixel shaders execute code generated from the material graph in the material editor, in which the artists are free to use any information, including pixel depth. The depth in LMS is no longer linear due to w being modified, therefore we had to modify the material graph code generator to generate code that remaps the depth value to linear as well. See the implementation of FHLSLMaterialTranslator::PixelDepth() for details.
 
@@ -175,7 +175,7 @@ The Instanced Stereo feature operates by rendering into a single viewport that e
 
 Therefore In order to combine both the LMS and Instanced Stereo techniques we do not shift vertices in the vertex shader and instead use the FastGS to directly broadcast vertices to their appropriate viewports by calculating viewport masks based on their clip space position and instance IDs. Similar to regular instanced stereo which sets a viewport that encompasses both the left and the right view, with LMS we set 8 viewports and 8 scissors simultaneously with the aforementioned RHI functions, with the first 4 viewports belong to the left view and the second 4 belonging to the right. In FastGS, the viewport mask of the first 4 viewports is first computed based on the input vertices’ clip space positions to determine which quadrant(s) of the view the triangle falls into, before being left shifted for 4 bits if the instance belongs to the right view. The following figure demonstrates the process.
 
-![image alt text](image_13.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_13.png){: .align-center}
 
 ### Lighting
 
@@ -207,7 +207,7 @@ SSR perform screen space ray tracing by marching steps into the HZB along given 
 
 The following figure demonstrates this process.
 
-![image alt text](image_14.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_14.png){: .align-center}
 
 SSAO sampling is similarly corrected. For each pixel it samples the HZB value around with a certain offset. Here we also need to remap each sample coordinate from linear space to LMS space before accessing the HZB.
 

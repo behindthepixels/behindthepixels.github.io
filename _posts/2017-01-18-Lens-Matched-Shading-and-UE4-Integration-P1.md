@@ -1,7 +1,7 @@
 ---
 title: "Lens Matched Shading and Unreal Engine 4 Integration (Part 1)"
 header:
-  teaser: "/assets/images/lms_posts/teaser1.jpg"
+  teaser: "/assets/images/lms_posts/teaser1.png"
 tags:
   - Virtual Reality
   - Unreal Engine
@@ -18,7 +18,7 @@ While LMS is quite simple and elegant algorithmically, there are many practical 
 
 # Lens Matched Shading Intro
 
-![image alt text](image_0.png){: .align-right width="300px"}
+![image alt text](/assets/images/lms_posts/image_0.png){: .align-right width="300px"}
 
 Before getting our hands wet in engine integration, let’s start with a short introduction to Lens Matched Shading. In the meantime, feel free to look at this blog done by my colleague Iain which covers the same topic as well: [Pascal VR Tech](https://developer.nvidia.com/pascal-vr-tech)
 
@@ -26,13 +26,13 @@ At the end of the rendering pipeline of all VR applications, one of the steps is
 
 We define shading rate as the number of shading samples per unit area on the framebuffer. The side effect of this lens distortion is that it changes the shading rate of the original image drastically.
 
-![image alt text](image_1.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_1.png){: .align-center}
 
 As shown in the figure above, lens distortion significantly squashes the periphery of the image, while enlarging the center, which makes the periphery shading rate higher and the center shading rate lower compared with the original image.
 
 The shading rate distribution after lens distortion is really far from ideal since the periphery receives many more shades per final sample than the central region. Also, viewers tend to focus their attention at the center of the screen, which places these over-sampled areas in their weaker peripheral vision.
 
-![image alt text](image_2.png){: .align-left}
+![image alt text](/assets/images/lms_posts/image_2.png){: .align-left}
 
 The figure below visualizes the shading rate distribution across a single view on an HTC Vive. It uses 1512x1680 as the actual render resolution and 1080x1200 as the display resolution. It’s clear that even with 140% of super sampling, the central region is still slightly undersampled on the final display, while the periphery is significantly super-sampled (close to 5x).
 
@@ -50,7 +50,7 @@ In the equation above *w*, *x* and *y* are all clip-space homogeneous coordinate
 
 * utilizing clip space w modification to reduce the shading rate in the periphery region.
 
-![image alt text](image_3.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_3.png){: .align-center}
 
 Since w modification keeps the linearity of the data, rasterization still works. And by carefully designing coefficients A and B and properly scaling the resolution we can approximate the shading rate of lenses rather well with Lens Matched Shading, improving the perceived rendering quality. What’s better is that we can also significantly increase FPS by using coefficients that reduce shading rate more in the periphery (considering that they will be blurred by the lens anyway) while still keeping the center shading rate high.
 
@@ -58,7 +58,7 @@ Since w modification keeps the linearity of the data, rasterization still works.
 
 The values of the coefficients and resolution scale are essential for controlling the distribution of shading rate. In similar fashion to the VRWorks SDK, we’ve also provided three sets of default configurations for both HTC Vive and Oculus Rift: Quality, Conservative, and Aggressive. The following figure visualizes the shading rate distributions for each configuration on an HTC Vive. All shading rate visualizations below use 1512x1680 as the render resolution and 1080x1200 as the display resolution, as recommended by HTC. Same as before, the visualized shading rates are relative to the final displayed resolution.
 
-![image alt text](image_4.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_4.png){: .align-center}
 
 As shown before, the Baseline on the left undersamples the center slightly while significantly supersampling the periphery region. The Quality configuration is designed to match the lens profile closely, with no undersampling across the entire image, while reducing the total number of pixels by 40%. The Conservative configuration is designed so that the periphery is undersampled to the same degree as the center is undersampled in Baseline. And finally, the Aggressive configuration is designed to provide maximum frame rate. It renders ¾ of number of pixels relative to the Conservative configuration, reducing the total number of pixels to roughly 34% relative to the Baseline.
 
@@ -76,17 +76,17 @@ Multi-Resolution Shading (MRS) is another piece of technology that aims at accel
 
     * LMS has a smoother shading rate transition across the image.
 
-![image alt text](image_5.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_5.png){: .align-center}
 
 * LMS uses only 4 viewports while MRS uses 9. Fewer viewports make it easier to work simultaneously with techniques like Instanced Stereo and Single Pass Stereo. This is because the number of viewports is limited to 16 in the hardware. Fewer viewports also potentially helps with performance.
 
 The following graph visualizes the shading rate distribution of MRS. It’s clear that the shading rate changes abruptly at viewport boundaries, and the center of the view still remain undersampled except for the Quality configuration. More importantly, the shading rate is not as low as LMS at each configuration level.
 
-![image alt text](image_6.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_6.png){: .align-center}
 
 We can estimate the comparative performance gains by computing the number of pixels shaded for matching LMS and MRS configurations. (See the bar chart below) The lower the number of pixels shaded, the better the performance.
 
-![image alt text](image_7.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_7.png){: .align-center}
 
 However, we should remember that the number of pixels shaded is not a direct measure of performance, for instance, coordinate remapping is more expensive for LMS than MRS, and there are other workloads in the application like geometry processing and CPU work which will also impact performance. (also please note that LMS is only available on Pascal, while MRS is also supported on Maxwell GPUs).
 

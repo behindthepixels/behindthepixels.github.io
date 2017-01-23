@@ -1,7 +1,7 @@
 ---
-title: "Lens Matched Shading and Unreal Engine 4 Integration (Part 1)"
+title: "Lens Matched Shading and Unreal Engine 4 Integration (Part 3)"
 header:
-  teaser: "/assets/images/lms_posts/teaser3.jpg"
+  teaser: "/assets/images/lms_posts/teaser3.png"
 tags:
   - Virtual Reality
   - Unreal Engine
@@ -29,7 +29,7 @@ Instead we can populate a stencil buffer with the same octagonal boundary and us
 
 As we have shown, LMS reduces the sampling rate in the peripheral area, but can also increase it around the fovea. before applying the final lens distortion to our final frame, we have to convert render target from LMS back into linear space. However, if we were to convert the LMS octagon to the original viewport size, we would lose the benefits of having super-sampled the central area. Ideally, we’d like to fuse our resampling to linear step together with the HMD lens distortion function, although it is difficult because the latter is typically locked inside the HMD run-time compositor software and it performs other optimizations like time warp for us.
 
-![image alt text](image_15.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_15.png){: .align-center}
 
 Instead, we work around this limitation by resampling the LMS buffer into a target that is larger than the original buffer size. We have added another console variable, vr.LensMatchedShadingUnwarpScale, to scale the resolution of the buffer. Typically, values between 1.3 to 1.5 would maintain the center sharpness reasonably well, while not impacting performance too much.
 
@@ -51,9 +51,9 @@ In the current integrations of LMS in UE4, we always run the PostProcessUpscale 
 
 The following chart demonstrates some performance statistics of running LMS on a number of UE4 scenes. All the data below was collected using GTX1080, rendering at 1512x1680 resolution as recommended by Vive. We can clearly see that LMS provide a big shrink in terms of frame time, while subjectively also increasing perceived rendering quality. We also compare the most aggressive setting between LMS and MRS, and demonstrate that LMS produces better performance and perceived quality.
 
-![image alt text](image_16.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_16.png){: .align-center}
 
-![image alt text](image_17.png){: .align-center}
+![image alt text](/assets/images/lms_posts/image_17.png){: .align-center}
 
 Of note, reduced frame time isn’t as much as the amount of pixels shaded. There are many reasons for this:
 
