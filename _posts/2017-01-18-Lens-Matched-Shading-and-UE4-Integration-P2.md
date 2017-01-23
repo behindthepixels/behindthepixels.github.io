@@ -90,12 +90,12 @@ Implementing a Fast Geometry Shader on the C++ side is similar to shaders in UE4
 template<typename LightMapPolicyType>
 class TBasePassFastGS : public TBasePassFastGeometryShaderPolicyParamType<typename LightMapPolicyType::VertexParametersType>
 {
-   	  DECLARE_SHADER_TYPE(TBasePassFastGS, MeshMaterial);
-      /*
-   		  Skipped…
-      */
+  DECLARE_SHADER_TYPE(TBasePassFastGS, MeshMaterial);
+  /*
+    Skipped…
+  */
 
-    	static const bool IsFastGeometryShader = true;
+  static const bool IsFastGeometryShader = true;
 };
 ```
 
@@ -155,7 +155,7 @@ View.BeginVRProjectionStates(RHICmdList);
 View.EndVRProjectionStates(RHICmdList);
 ```
 
-1. Screen space passes such as screen space reflections, screen space ambient occlusion and all the other post processing passes. As previously mentioned, instead of rendering a fullscreen quad, we only cover the smaller octagonal area. For full screen passes that use compute shaders like tiled-based lighting and environmental reflections, we also need to kill threads that work on pixels outside of the octagon.
+2. Screen space passes such as screen space reflections, screen space ambient occlusion and all the other post processing passes. As previously mentioned, instead of rendering a fullscreen quad, we only cover the smaller octagonal area. For full screen passes that use compute shaders like tiled-based lighting and environmental reflections, we also need to kill threads that work on pixels outside of the octagon.
 
 For both types of render passes, shaders need to be aware of LMS space and remap coordinates accordingly.
 
