@@ -17,5 +17,7 @@ author_profile: true
     <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
-  {% include archive-single.html %}
+  <div class="post__wrapper">
+    {% include archive-single.html type="post" %}
+  </div>
 {% endfor %}
