@@ -7,37 +7,37 @@ tags:
   - Rendering
 ---
 
-<figure style="width: 49%" class="align-left">
+Recently I have implemented irradiance caching in the renderer I have been independently developing, EDXRay. This enabled the renderer to synthesize noiseless images in a short amount of time.
+
+<figure style="width: 47.5%" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_0.jpg" alt="">
   <figcaption>Cornell box scene renderer with Irradiance caching. In scenes only contain diffuse objects, this algorithm is particularly efficient.</figcaption>
 </figure> 
 
-<figure style="width: 49%" class="align-right">
+<figure style="width: 47.5%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_1.jpg" alt="">
   <figcaption>The same scene as the left one, with irradiance samples visualized. Samples distributions are clampled in screen space.</figcaption>
 </figure> 
 
-Recently I have implemented irradiance caching in the renderer I have been independently developing, EDXRay. This enabled the renderer to synthesize noiseless images in a short amount of time.
-
 The error function follows [this work](http://www.tabellion.org/et/paper/). Irradiance samples are distributed evenly in screen space. My implementation allows me to flexibly integrator used to calculate irradiance. Currently it supports both the 2 GI integrators originally in EDXRay: path tracer and bidirectional path tracer. For scenes where lights can easily be reached by sampling path from the camera, path tracing would suffice. For scenes such as the one below, where the majority of lighting comes from indirect illumination, bidirectional path tracing can produce images that has much less artifacts. All the images shown in this post was rendered with Irradiance Caching, sample distribution clamped at 1.5x to 10x pixel area, and irradiance evaluation sample count is 4096.
 
-<figure style="width: 49%" class="align-left">
+<figure style="width: 47.5%" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_2.jpg" alt="">
   <figcaption>Light source is this scene is right below the ceiling, therefore hard to be sampled if tracing paths from camera, resulting a really blotchy image.</figcaption>
 </figure> 
 
-<figure style="width: 49%" class="align-right">
+<figure style="width: 47.5%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_3.jpg" alt="">
   <figcaption>The same scene as left, with irradiance evaluating with bidirectional path tracing, sample amount of samples used. Since light paths were sampled from the light source too, we can construct a light path more efficiently.</figcaption>
 </figure> 
 
 Additionally, because bidirectional path tracing (BDPT) with multiple importance sampling is much better at rendering caustics and unidirectional path tracing, therefore in scenes that contain specular objects, using bidirectional path tracing to evaluate irradiance would also be much more efficient than path tracing, as shown below.
 
-<figure style="width: 49%" class="align-left">
+<figure style="width: 47.5%" class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_4.jpg" alt="">
   <figcaption>Path tracing is not efficient at handling caustics. Scenes with specular objects will be blotchy when using path tracing with irradiance caching.</figcaption>
 </figure> 
-<figure style="width: 49%" class="align-right">
+<figure style="width: 47.5%" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/bidir_irradiance_cache/image_5.jpg" alt="">
   <figcaption>Same scene as left, bidirectional path tracing is more capable of handling specular objects.</figcaption>
 </figure> 
