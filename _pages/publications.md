@@ -10,6 +10,19 @@ excerpt: 'Focus on Computer Graphics and Computer Vision.'
 
 ---
 
+### Spatiotemporal Variance-Guided Filtering: Real-Time Reconstruction for Path-Traced Global Illumination
+
+**Christoph Schied, Anton Kaplanyan, Chris Wyman, Anjul Patney, Chakravarty R. Alla Chaitanya, John Burgess, Shiqiu Liu, Carsten Dachsbacher, Aaron Lefohn, Marco Salvi**
+
+_High Performance Graphics 2017 (Best Paper Award)_
+
+![](/assets/images/pages/SVGF.jpg){: .align-left width="600px" }
+We introduce a reconstruction algorithm that generates a temporally stable sequence of images from one path-per-pixel global illumination. To handle such noisy input, we use temporal accumulation to increase the effective sample count and spatiotemporal luminance variance estimates to drive a hierarchical, image-space wavelet filter [Dammertz et al. 2010]. This hierarchy allows us to distinguish between noise and detail at multiple scales using local luminance variance.
+Physically based light transport is a long-standing goal for realtime computer graphics. While modern games use limited forms of ray tracing, physically based Monte Carlo global illumination does not meet their 30 Hz minimal performance requirement. Looking ahead to fully dynamic real-time path tracing, we expect this to only be feasible using a small number of paths per pixel. As such, image reconstruction using low sample counts is key to bringing path tracing to real-time. When compared to prior interactive reconstruction filters, our work gives approximately 10× more temporally stable results, matches reference images 5–47% better (according to SSIM), and runs in just 10 ms (± 15%) on modern graphics hardware at 1920×1080 resolution.
+
+[Preprint](/assets/files/hpg17_svgf.pdf)
+
+
 ### Computer Simulations Imply Forelimb-Dominated Underwater Flight in Plesiosaurs
 
 **Shiqiu Liu, Adam S. Smith, Yuting Gu, Jie Tan, C. Karen Liu and Greg Turk**
