@@ -10,14 +10,14 @@ excerpt: 'Focus on Computer Graphics and Computer Vision.'
 
 ---
 
-### Accelerating your VR Games with VRWorks (Upcoming)
+### Accelerating your VR Games with VRWorks
 _Game Developers Conference 2017_
 
 Across graphics, audio, video, and physics, the NVIDIA VRWorks suite of technologies helps developers maximize performance and immersion for VR games and applications. This talk will explore the latest features of VRWorks, explain the VR-specific challenges they address, and provide application-level tips and tricks to take full advantage of these features. Special focus will be given to the details and inner workings of our latest VRWorks feature, Lens Matched Shading, along with the latest VRWorks integrations into Unreal Engine and Unity.
 
 **Takeaway:** Attendees will gain an understanding of the unique challenges of real-time VR gaming and insight into the VRWorks suite of technologies.
 
-[GDC Website](http://schedule.gdconf.com/session/accelerating-your-vr-games-with-vrworks-presented-by-nvidia)
+[Video Recording](http://www.gdcvault.com/play/1024356/), [Slides](/assets/files/VRWorks_GDC17.pdf)
 
 ---
 
