@@ -15,10 +15,10 @@ feature_row1:
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 feature_row2:
-  - image_path: /assets/images/edxray/coffee_picaso_transfer.jpg
+  - image_path: /assets/images/edxnet/coffee_picaso_transfer.jpg
     title: "EDXNet"
     excerpt: 'A deep learning framework with static computational graph and auto-diff written in C++. It can be used for a number of interesting tasks such as image recognition and style transfer.'
-    url: "http://behindthepixels.io/EDXRet/"
+    url: "http://behindthepixels.io/EDXNet/"
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 feature_row3:
