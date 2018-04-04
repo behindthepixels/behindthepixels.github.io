@@ -26,6 +26,10 @@ _GPU Technology Conference 2018_
 ![](/assets/images/pages/Reflections.jpg){: .align-left width="360px" }
 Join Epic's Kim Libreri and Marcus Wassmer along with NVIDIA's Ignacio Llamas and Edward Liu as they provide an in-depth view of the creative and technical aspects of creating photo-realistic cinematic content that runs at real time.
 
+
+
+
+
 [Demo Video](https://www.youtube.com/watch?v=J3ue35ago3Y)
 
 ---
