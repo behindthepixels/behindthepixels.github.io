@@ -26,9 +26,7 @@ _GPU Technology Conference 2018_
 ![](/assets/images/pages/Reflections.jpg){: .align-left width="360px" }
 Join Epic's Kim Libreri and Marcus Wassmer along with NVIDIA's Ignacio Llamas and Edward Liu as they provide an in-depth view of the creative and technical aspects of creating photo-realistic cinematic content that runs at real time.
 
-
-
-
+Peek into the future of real-time computer graphics with “Reflections,” the first demonstration of real-time raytracing in Unreal Engine 4 using Microsoft’s new DXR framework and NVIDIA RTX technology for Volta GPUs. The Reflections demo illustrates the next-gen experimental lighting and rendering techniques in Unreal Engine, developed in collaboration with NVIDIA and ILMxLAB. 
 
 [Demo Video](https://www.youtube.com/watch?v=J3ue35ago3Y)
 
