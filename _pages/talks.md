@@ -10,8 +10,28 @@ excerpt: 'Focus on Computer Graphics and Computer Vision.'
 
 ---
 
+### Ray Tracing in Games with NVIDIA RTX
+_Game Developers Conference 2018_
+
+![](/assets/images/pages/RTX.jpg){: .align-left width="360px" }
+NVIDIA will show how RTX, DXR along with GameWorks, Ray Tracing can revolutionize gaming by significantly boosting the real-time rendering quality as well as accelerating the content creating process.In particular, NVIDIA will show state of the art real-time denoising technologies from GameWorks that will drastically bring down the cost of ray traced rendering of area light soft shadows, ambient occlusions, and glossy reflections so they become practical for real-time rendering. In addition NVIDIA will showcase how RTX and DXR can be used to conveniently implement offline light transport algorithms like path tracing in your game engine, and show the power of that for content creation process. Finally NVIDIA will also provide some tips and guideline for integrating DXR into your engine, and discuss open challenges.
+
+[Video Recording](https://www.gdcvault.com/play/1024813/), [Demo Video](https://www.youtube.com/watch?v=tjf-1BxpR9c)
+
+---
+
+### Cinematic Lighting in Unreal Engine
+_GPU Technology Conference 2018_
+
+![](/assets/images/pages/Reflections.jpg){: .align-left width="360px" }
+Join Epic's Kim Libreri and Marcus Wassmer along with NVIDIA's Ignacio Llamas and Edward Liu as they provide an in-depth view of the creative and technical aspects of creating photo-realistic cinematic content that runs at real time.
+
+[Demo Video](https://www.youtube.com/watch?v=J3ue35ago3Y)
+
+---
+
 ### Accelerating your VR Games with VRWorks
-_Game Developers Conference 2017_
+_Game Developers Conference 2017_ and _GPU Technology Conference 2017_
 
 ![](/assets/images/pages/GDC17 VRWorks.jpg){: .align-left width="360px" }
 Across graphics, audio, video, and physics, the NVIDIA VRWorks suite of technologies helps developers maximize performance and immersion for VR games and applications. This talk will explore the latest features of VRWorks, explain the VR-specific challenges they address, and provide application-level tips and tricks to take full advantage of these features. Special focus will be given to the details and inner workings of our latest VRWorks feature, Lens Matched Shading, along with the latest VRWorks integrations into Unreal Engine and Unity.
