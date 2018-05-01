@@ -5,7 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/Header1.jpg
   caption: 'Rendered with EDXRay'
-excerpt: 'Focus on Computer Graphics and Computer Vision.'
+excerpt: 'Computer Graphics and Deep Learning'
 ---
 
 ---
