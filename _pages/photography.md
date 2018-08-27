@@ -48,6 +48,10 @@ gallery:
     image_path: /assets/images/photos/Lighthouse Santa Cruz.jpg
     alt: "A Lighthouse on the coast of Santa Cruz."
     title: "A Lighthouse on the coast of Santa Cruz."
+  - url: /assets/images/photos/Sunrise Cancun.jpg
+    image_path: /assets/images/photos/Sunrise Cancun.jpg
+    alt: "Sunrise at the beach at Cancun."
+    title: "Sunrise at the beach at Cancun."
   - url: /assets/images/photos/Tunnel View Sunrise.jpg
     image_path: /assets/images/photos/Tunnel View Sunrise.jpg
     alt: "Sunrise at Tunnel View, Yosemite National Park."
@@ -64,18 +68,14 @@ gallery:
     image_path: /assets/images/photos/WestLake Sunset.jpg
     alt: "Sunset at West Lake, Hangzhou, China."
     title: "Sunset at West Lake, Hangzhou, China."
-  - url: /assets/images/photos/Sunrise Cancun.jpg
-    image_path: /assets/images/photos/Sunrise Cancun.jpg
-    alt: "Sunrise at the beach at Cancun."
-    title: "Sunrise at the beach at Cancun."
-  - url: /assets/images/photos/Mather Point Moonrise.jpg
-    image_path: /assets/images/photos/Mather Point Moonrise.jpg
-    alt: "Moonrise at Mather Point, Grand Canyon National Park."
-    title: "Moonrise at Mather Point, Grand Canyon National Park."
   - url: /assets/images/photos/StarTrail Tahoe.jpg
     image_path: /assets/images/photos/StarTrail Tahoe.jpg
     alt: "Startrail over Lake Tahoe area."
     title: "Startrail over Lake Tahoe area."
+  - url: /assets/images/photos/Mather Point Moonrise.jpg
+    image_path: /assets/images/photos/Mather Point Moonrise.jpg
+    alt: "Moonrise at Mather Point, Grand Canyon National Park."
+    title: "Moonrise at Mather Point, Grand Canyon National Park."
   - url: /assets/images/photos/Icy Tahoe.jpg
     image_path: /assets/images/photos/Icy Tahoe.jpg
     alt: "Winter scene at Lake Tahoe."
