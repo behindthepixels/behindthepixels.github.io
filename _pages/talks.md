@@ -10,6 +10,16 @@ excerpt: 'Computer Graphics and Deep Learning'
 
 ---
 
+### Real-Time Ray Tracing: Low Sample Count Ray Tracing with NVIDIA's Ray Tracing Denoisers
+_SIGGRAPH 2018_
+
+![](/assets/images/pages/SpeedofLight.jpg){: .align-left width="360px" }
+In this session, Edward Liu from NVIDIA will demonstrate how state of the art denoising technologies provided in the Gameworks Ray Tracing module will make 1 sample per pixel ray tracing practical in many scenarios in real-time rendering, including area light shadows, ambient occlusion, glossy reflections and even indirect diffuse global illumination. Edward will show that one sample per pixel ray tracing with denoising can achieve much improved realism and fidelity when compared with traditional real-time rendering techniques. These denoisers have been successfully used in all the UE4 based cinematic real-time ray tracing demos released in 2018, including Star Wars Reflections, Porsche 70th anniversary trailer Speed of Light, Turing architecture launch Project SOL and others.
+
+[Video Recording](http://on-demand.gputechconf.com/siggraph/2018/video/sig1813-5-edward-liu-low-sample-count-ray-tracing-denoisers.html)
+
+---
+
 ### Ray Tracing in Games with NVIDIA RTX
 _Game Developers Conference 2018_
 
