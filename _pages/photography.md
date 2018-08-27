@@ -28,6 +28,10 @@ gallery:
     image_path: /assets/images/photos/Mather Point Sunset.jpg
     alt: "Sunset at Mather Point, Grand Canyon."
     title: "Sunset at Mather Point, Grand Canyon."
+  - url: /assets/images/photos/Dragon Fly Creek Denali NP.jpg
+    image_path: /assets/images/photos/Dragon Fly Creek Denali NP.jpg
+    alt: "Dragon Fly Creek, Denali National Park."
+    title: "Dragon Fly Creek, Denali National Park."
 ---
 
 ---
