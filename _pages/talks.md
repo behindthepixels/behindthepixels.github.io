@@ -10,7 +10,7 @@ excerpt: 'Computer Graphics and Deep Learning'
 
 ---
 
-### Real-Time Ray Tracing: Low Sample Count Ray Tracing with NVIDIA's Ray Tracing Denoisers
+### Low Sample Count Ray Tracing with NVIDIA's Ray Tracing Denoisers
 _SIGGRAPH 2018_
 
 ![](/assets/images/pages/SpeedofLight.jpg){: .align-left width="360px" }
