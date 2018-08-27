@@ -20,10 +20,6 @@ gallery:
     image_path: /assets/images/photos/Mather Point Star Trail.jpg
     alt: "Star Trail at Mather Point, Grand Canyon National Park."
     title: "Star Trail at Mather Point, Grand Canyon National Park."
-  - url: /assets/images/photos/Mather Point Moonrise.jpg
-    image_path: /assets/images/photos/Mather Point Moonrise.jpg
-    alt: "Moonrise at Mather Point, Grand Canyon National Park."
-    title: "Moonrise at Mather Point, Grand Canyon National Park."
   - url: /assets/images/photos/Mather Point Sunset.jpg
     image_path: /assets/images/photos/Mather Point Sunset.jpg
     alt: "Sunset at Mather Point, Grand Canyon National Park."
@@ -32,8 +28,8 @@ gallery:
     image_path: /assets/images/photos/Dragon Fly Creek Denali NP.jpg
     alt: "Dragon Fly Creek, Denali National Park."
     title: "Dragon Fly Creek, Denali National Park."
-  - url: /assets/images/photos/Aurpra Alaska.jpg
-    image_path: /assets/images/photos/Aurpra Alaska.jpg
+  - url: /assets/images/photos/Aurora Alaska.jpg
+    image_path: /assets/images/photos/Aurora Alaska.jpg
     alt: "Northen Light over Murphy Dome, Fairbanks, Alaska."
     title: "Northen Light over Murphy Dome, Fairbanks, Alaska."
   - url: /assets/images/photos/Lighthouse Santa Cruz.jpg
@@ -48,10 +44,6 @@ gallery:
     image_path: /assets/images/photos/Oxbul Sunset.jpg
     alt: "Sunset at Oxbul, Grand Teton National Park."
     title: "Sunset at Oxbul, Grand Teton National Park."
-  - url: /assets/images/photos/Startail Tahoe.jpg
-    image_path: /assets/images/photos/Startail Tahoe.jpg
-    alt: "Startrail over Lake Tahoe area."
-    title: "Startrail over Lake Tahoe area."
   - url: /assets/images/photos/Tahoe Sunset.jpg
     image_path: /assets/images/photos/Tahoe Sunset.jpg
     alt: "Sunset at Lake Tahoe."
@@ -76,6 +68,14 @@ gallery:
     image_path: /assets/images/photos/Sunrise Cancun.jpg
     alt: "Sunrise at the beach at Cancun."
     title: "Sunrise at the beach at Cancun."
+  - url: /assets/images/photos/Mather Point Moonrise.jpg
+    image_path: /assets/images/photos/Mather Point Moonrise.jpg
+    alt: "Moonrise at Mather Point, Grand Canyon National Park."
+    title: "Moonrise at Mather Point, Grand Canyon National Park."
+  - url: /assets/images/photos/Startrail Tahoe.jpg
+    image_path: /assets/images/photos/Startrail Tahoe.jpg
+    alt: "Startrail over Lake Tahoe area."
+    title: "Startrail over Lake Tahoe area."
 ---
 
 ---
