@@ -28,10 +28,6 @@ gallery:
     image_path: /assets/images/photos/Dragon Fly Creek Denali NP.jpg
     alt: "Dragon Fly Creek, Denali National Park."
     title: "Dragon Fly Creek, Denali National Park."
-  - url: /assets/images/photos/Lighthouse Santa Cruz.jpg
-    image_path: /assets/images/photos/Lighthouse Santa Cruz.jpg
-    alt: "A Lighthouse on the coast of Santa Cruz."
-    title: "A Lighthouse on the coast of Santa Cruz."
   - url: /assets/images/photos/Milky Way Yellow Stone Fall.jpg
     image_path: /assets/images/photos/Milky Way Yellow Stone Fall.jpg
     alt: "Milky Way over Yellow Stone Fall, Yellow Stone National Park."
@@ -48,6 +44,10 @@ gallery:
     image_path: /assets/images/photos/Aurora Alaska.jpg
     alt: "Northern Light over Murphy Dome, Fairbanks, Alaska."
     title: "Northern Light over Murphy Dome, Fairbanks, Alaska."
+  - url: /assets/images/photos/Lighthouse Santa Cruz.jpg
+    image_path: /assets/images/photos/Lighthouse Santa Cruz.jpg
+    alt: "A Lighthouse on the coast of Santa Cruz."
+    title: "A Lighthouse on the coast of Santa Cruz."
   - url: /assets/images/photos/Tunnel View Sunrise.jpg
     image_path: /assets/images/photos/Tunnel View Sunrise.jpg
     alt: "Sunrise at Tunnel View, Yosemite National Park."
