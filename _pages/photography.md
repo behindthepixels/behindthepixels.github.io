@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/Header1.jpg
   caption: 'Rendered with EDXRay'
-excerpt: 'Computer Graphics and Deep Learning'
+excerpt: ''
 gallery:
   - url: /assets/images/photos/Moraine Lake Sunset - HD.jpg
     image_path: /assets/images/photos/Moraine Lake Sunset - HD.jpg

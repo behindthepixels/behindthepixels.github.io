@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/Header1.jpg
   caption: 'Rendered with EDXRay'
-excerpt: 'Computer Graphics and Deep Learning'
+excerpt: ''
 feature_row1:
   - image_path: /assets/images/edxray/San Miguel 2nd Fl.jpg
     title: "EDXRay"
