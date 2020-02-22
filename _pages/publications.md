@@ -10,6 +10,17 @@ excerpt: ''
 
 ---
 
+### A Survey of Temporal Antialiasing Techniques
+
+**Lei Yang, Shiqiu Liu, Marco Salvi**
+
+_Eurographics 2020, State of the Art Report (Conditionally accepted)_
+
+![](/assets/images/pages/TAA.jpg){: .align-left width="600px" }
+Temporal Antialiasing (TAA), formally defined as temporally-amortized supersampling, is the most widely used antialiasing technique in today’s real-time renderers and game engines. This survey provides a systematic overview of this technique. We first review the history of TAA, its development path and related work. We then identify the two main sub-components of TAA, sample accumulation and history validation, and discuss algorithmic and implementation options. As temporal upsampling is becoming increasingly relevant to today’s game engines, we propose an extension of our TAA formulation to cover a variety of temporal upsampling techniques. Despite the popularity of TAA, there are still significant unresolved technical challenges that affect image quality in many scenarios. We provide an in-depth analysis of these challenges, and review existing techniques for improvements. Finally, we summarize popular algorithms and topics that are closely related to TAA. We believe the rapid advances in those areas may either benefit from or feedback into TAA research and development.
+
+[Preprint](/assets/files/TemporalAA.pdf)
+
 ### Spatiotemporal Variance-Guided Filtering: Real-Time Reconstruction for Path-Traced Global Illumination
 
 **Christoph Schied, Anton Kaplanyan, Chris Wyman, Anjul Patney, Chakravarty R. Alla Chaitanya, John Burgess, Shiqiu Liu, Carsten Dachsbacher, Aaron Lefohn, Marco Salvi**
