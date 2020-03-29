@@ -10,6 +10,16 @@ excerpt: ''
 
 ---
 
+### DLSS 2.0 – Image Reconstruction for Real-Time Rendering with Deep learning
+_Game Developers Conference 2020, GPU Technology Conference 2020_
+
+![](/assets/images/pages/DLSS.jpg){: .align-left width="600px" }
+In this talk, Edward Liu from NVIDIA Applied Deep Learning Research delves into the latest research progress on Deep Learning Super Sampling (DLSS), which uses deep learning and the NVIDIA Tensor Cores to reconstruct super sampled frames in real time. He discusses and demonstrates why scaling and image reconstruction for real-time rendering is an extremely challenging problem, and examines the cause of common artifacts produced by traditional up-sampling techniques. With this background, Edward then shows how the DLSS, deep learning-based reconstruction algorithm, achieves better image quality with less input samples than traditional techniques. The talk concludes with a walkthrough of DLSS integration in Unreal Engine 4 (UE4) and a look at the integration of DLSS in to the acclaimed indie sci-fi adventure "Deliver Us The Moon" from KeokeN Interactive.
+
+Video coming soon...
+
+---
+
 ### Low Sample Count Ray Tracing with NVIDIA's Ray Tracing Denoisers
 _SIGGRAPH 2018_
 

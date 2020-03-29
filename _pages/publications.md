@@ -21,6 +21,22 @@ Temporal Antialiasing (TAA), formally defined as temporally-amortized supersampl
 
 [Preprint](/assets/files/TemporalAA.pdf)
 
+---
+
+### Cinematic Rendering in UE4 with Real-Time Ray Tracing and Denoising
+
+**Edward Liu, Ignacio Llamas, Juan Cañada, Patrick Kelly**
+
+_Ray Tracing Gems_
+
+![](/assets/images/pages/Reflections.jpg){: .align-left width="360px" }
+We present cinematic quality real-time rendering by integrating ray tracing in Unreal Engine 4. We improve the state-of-the-art performance in GPU ray tracing by an order of magnitude through a combination of engineering work, new ray tracing hardware, hybrid rendering techniques, and novel denoising algorithms.
+
+
+[Pdf](https://link.springer.com/content/pdf/10.1007%2F978-1-4842-4427-2_19.pdf)
+
+---
+
 ### Spatiotemporal Variance-Guided Filtering: Real-Time Reconstruction for Path-Traced Global Illumination
 
 **Christoph Schied, Anton Kaplanyan, Chris Wyman, Anjul Patney, Chakravarty R. Alla Chaitanya, John Burgess, Shiqiu Liu, Carsten Dachsbacher, Aaron Lefohn, Marco Salvi**
@@ -33,6 +49,7 @@ Physically based light transport is a long-standing goal for realtime computer g
 
 [Preprint](/assets/files/hpg17_svgf.pdf)
 
+---
 
 ### Computer Simulations Imply Forelimb-Dominated Underwater Flight in Plesiosaurs
 
