@@ -15,6 +15,8 @@ excerpt: ''
 
 **Yaobin Ouyang, Shiqiu Liu, Markus Kettunen, Matt Pharr, Jacopo Pantaleoni**
 
+_Computer Graphics Forum (Proceedings of High Performance Graphics 2021)_
+
 ![](/assets/images/pages/ReSTIR-GI-Teaser.png){: .align-left width="400px" }
 
 Even with the advent of hardware-accelerated ray tracing in modern GPUs, only a small number of rays can be traced at each pixel in real-time applications. This presents a significant challenge for path tracing, even when augmented with state-of-the art denoising algorithms. While the recently-developed ReSTIR algorithm [Bitterli et al. 2020] enables high-quality renderings of scenes with millions of light sources using just a few shadow rays at each pixel, there remains a need for effective algorithms to sample indirect illumination.
@@ -27,6 +29,8 @@ We introduce an effective path sampling algorithm for indirect lighting that is 
 
 **Zheng Zeng, Shiqiu (Edward) Liu, Jinglei Yang, Lu Wang, Ling-Qi Yan**
 
+_Computer Graphics Forum (Proceedings of Eurographics 2021)_
+
 ![](/assets/images/pages/mvec.png){: .align-left width="360px" }
 
 Real-time ray tracing (RTRT) is being pervasively applied. The key to RTRT is a reliable denoising scheme that reconstructs clean images from significantly undersampled noisy inputs, usually at 1 sample per pixel as limited by current hardware’s computing power. The state of the art reconstruction methods all rely on temporal filtering to find correspondences of current pixels in the previous frame, described using per-pixel screen-space motion vectors. While these approaches are demonstrated powerful, they suffer from a common issue that the temporal information cannot be used when the motion vectors are not valid, i.e. when temporal correspondences are not obviously available or do not exist in theory. We introduce temporally reliable motion vectors that aim at deeper exploration of temporal coherence, especially for the generally-believed difficult applications on shadows, glossy reflections and occlusions, with the key idea to detect and track the cause of each effect. We show that our temporally reliable motion vectors produce significantly better temporal results on a variety of dynamic scenes when compared to the state of the art methods, but with negligible performance overhead.
@@ -36,6 +40,8 @@ Real-time ray tracing (RTRT) is being pervasively applied. The key to RTRT is a 
 ### Neural FFTs for Universal Texture Image Synthesis
 
 **Morteza Mardani, Guilin Liu, Aysegul Dundar, Shiqiu Liu, Andrew Tao, Bryan Catanzaro**
+
+_Advances in Neural Information Processing Systems 33 (NeurIPS 2020)_
 
 ![](/assets/images/pages/fft.png){: .align-left width="460px" }
 
