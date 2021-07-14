@@ -8,6 +8,30 @@ header:
   caption: 'Rendered with EDXRay'
 excerpt: ''
 gallery:
+  - url: /assets/images/photos/BurneyFalls.jpg
+    image_path: /assets/images/photos/BurneyFalls.jpg
+    alt: "Burney Falls, California."
+    title: "Burney Falls, California."
+  - url: /assets/images/photos/Kahana Bay.jpg
+    image_path: /assets/images/photos/Kahana Bay.jpg
+    alt: "Beautiful god ray at Kahana Bay, O'ahu."
+    title: "Beautiful god ray at Kahana Bay, O'ahu."
+  - url: /assets/images/photos/NaPali Coast Sunset.jpg
+    image_path: /assets/images/photos/NaPali Coast Sunset.jpg
+    alt: "Rainbow sunset at Napali Coast, Kauai."
+    title: "Rainbow sunset at Napali Coast, Kauai."
+  - url: /assets/images/photos/NaPali Coast.jpg
+    image_path: /assets/images/photos/NaPali Coast.jpg
+    alt: "Gorgeous Napali Coast, Kauai."
+    title: "Gorgeous Napali Coast, Kauai."
+  - url: /assets/images/photos/Kauai.jpg
+    image_path: /assets/images/photos/Kauai.jpg
+    alt: "Aerial shot of a beach in Kauai."
+    title: "Aerial shot of a beach in Kauai."
+  - url: /assets/images/photos/KingsCreekFalls.jpg
+    image_path: /assets/images/photos/KingsCreekFalls.jpg
+    alt: "King's Creek Falls, Lassen National Park."
+    title: "King's Creek Falls, Lassen National Park."
   - url: /assets/images/photos/Moraine Lake Sunset - HD.jpg
     image_path: /assets/images/photos/Moraine Lake Sunset - HD.jpg
     alt: "Sunset at Moraine Lake, Banff National Park."
