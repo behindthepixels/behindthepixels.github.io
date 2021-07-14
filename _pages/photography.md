@@ -28,10 +28,6 @@ gallery:
     image_path: /assets/images/photos/Kauai.jpg
     alt: "Aerial shot of a beach in Kauai."
     title: "Aerial shot of a beach in Kauai."
-  - url: /assets/images/photos/KingsCreekFalls.jpg
-    image_path: /assets/images/photos/KingsCreekFalls.jpg
-    alt: "King's Creek Falls, Lassen National Park."
-    title: "King's Creek Falls, Lassen National Park."
   - url: /assets/images/photos/Moraine Lake Sunset - HD.jpg
     image_path: /assets/images/photos/Moraine Lake Sunset - HD.jpg
     alt: "Sunset at Moraine Lake, Banff National Park."
@@ -92,6 +88,10 @@ gallery:
     image_path: /assets/images/photos/WestLake Sunset.jpg
     alt: "Sunset at West Lake, Hangzhou, China."
     title: "Sunset at West Lake, Hangzhou, China."
+  - url: /assets/images/photos/Icy Tahoe.jpg
+    image_path: /assets/images/photos/Icy Tahoe.jpg
+    alt: "Winter scene at Lake Tahoe."
+    title: "Winter scene at Lake Tahoe."
   - url: /assets/images/photos/StarTrail Tahoe.jpg
     image_path: /assets/images/photos/StarTrail Tahoe.jpg
     alt: "Startrail over Lake Tahoe area."
@@ -100,10 +100,10 @@ gallery:
     image_path: /assets/images/photos/Mather Point Moonrise.jpg
     alt: "Moonrise at Mather Point, Grand Canyon National Park."
     title: "Moonrise at Mather Point, Grand Canyon National Park."
-  - url: /assets/images/photos/Icy Tahoe.jpg
-    image_path: /assets/images/photos/Icy Tahoe.jpg
-    alt: "Winter scene at Lake Tahoe."
-    title: "Winter scene at Lake Tahoe."
+  - url: /assets/images/photos/KingsCreekFalls.jpg
+    image_path: /assets/images/photos/KingsCreekFalls.jpg
+    alt: "King's Creek Falls, Lassen National Park."
+    title: "King's Creek Falls, Lassen National Park."
 ---
 
 ---
