@@ -10,6 +10,18 @@ excerpt: ''
 
 ---
 
+### ExtraNet: Real-time Extrapolated Rendering for Low-latency Temporal Supersampling
+
+**Jie Guo, Xihao Fu, Liqiang Lin, Hengjun Ma, Yanwen Guo, Shiqiu (Edward) Liu, Ling-Qi Yan**
+
+_ACM Transactions on Graphics (Proceedings of SIGGRAPH Asia 2021)_
+
+![](/assets/images/pages/extra_teaser.png){: .align-left width="400px" }
+
+Both the frame rate and the latency are crucial to the performance of real-time rendering applications such as video games. Spatial supersampling methods, such as the Deep Learning SuperSampling (DLSS), have been proven successful at decreasing the rendering time of each frame by rendering at a lower resolution. But temporal supersampling methods that directly aim at producing more frames on the fly are still not practically available. This is mainly due to both its own computational cost and the latency introduced by interpolating frames from the future. In this paper, we present ExtraNet, an efficient neural network that predicts accurate shading results on an extrapolated frame, to minimize both the performance overhead and the latency. With the help of the rendered auxiliary geometry buffers of the extrapolated frame, and the temporally reliable motion vectors, we train our ExtraNet to perform two tasks simultaneously: irradiance in-painting for regions that cannot find historical correspondences, and accurate ghosting-free shading prediction for regions where temporal information is available. We present a robust hole-marking strategy to automate the classification of these tasks, as well as the data generation from a series of high-quality production-ready scenes. Finally, we use lightweight gated convolutions to enable fast inference. As a result, our ExtraNet is able to produce plausibly extrapolated frames without easily noticeable artifacts, delivering a 1.5 to near 2 increase in frame rates with minimized latency in practice.
+
+
+[Paper](https://sites.cs.ucsb.edu/~lingqi/publications/paper_extranet.pdf)
 
 ### ReSTIR GI: Path Resampling for Real-Time Path Tracing
 
