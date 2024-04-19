@@ -8,17 +8,17 @@ header:
   caption: 'Rendered with EDXRay'
 excerpt: ''
 feature_row1:
-  - image_path: /assets/images/edxray/San Miguel 2nd Fl.jpg
-    title: "EDXRay"
-    excerpt: 'A physically based renderer that features many state of the art algorithms in light transport simulation published in recent years.'
-    url: "http://behindthepixels.io/EDXRay/"
-    btn_label: "Learn More"
-    btn_class: "btn--inverse"
-feature_row2:
   - image_path: /assets/images/edxnet/coffee_picaso_transfer.jpg
     title: "EDXNet"
     excerpt: 'A deep learning framework with static computational graph and auto-diff written in C++. It can be used for a number of interesting tasks such as image recognition and style transfer.'
     url: "http://behindthepixels.io/EDXNet/"
+    btn_label: "Learn More"
+    btn_class: "btn--inverse"
+feature_row2:
+  - image_path: /assets/images/edxray/San Miguel 2nd Fl.jpg
+    title: "EDXRay"
+    excerpt: 'A physically based renderer that features many state of the art algorithms in light transport simulation published in recent years.'
+    url: "http://behindthepixels.io/EDXRay/"
     btn_label: "Learn More"
     btn_class: "btn--inverse"
 feature_row3:

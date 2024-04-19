@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: single
 author_profile: true
 header:
   overlay_color: "#5e616c"
@@ -7,3 +7,9 @@ header:
   caption: 'Rendered with EDXRay'
 excerpt: ''
 ---
+
+{% capture about_content %}
+{% include about.md %}
+{% endcapture %}
+
+{{ about_content | markdownify }}

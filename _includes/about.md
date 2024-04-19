@@ -1,13 +1,3 @@
----
-permalink: /about/
-title: "Behind the Pixels"
-author_profile: true
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/Header1.jpg
-  caption: 'Rendered with EDXRay'
-excerpt: ''
----
 
 # About Me
 
