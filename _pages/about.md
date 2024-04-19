@@ -11,7 +11,7 @@ excerpt: ''
 
 # About Me
 
-I am Edward(Shiqiu) Liu, a Principal Research Scientist and Senior Manager at NVIDIA Applied Deep Learning Research, where I currently explore the exciting application of deep learning in real-time graphics pipeline and other topics.
+I am Edward(Shiqiu) Liu, a Principal Research Scientist and Senior Research Manager at NVIDIA Applied Deep Learning Research, where I currently explore the exciting application of deep learning in real-time graphics pipeline and other topics.
 
 In the last several years at NVIDIA I have contributed to the early research and deveopment of several crtical technology for next-gen real-time graphics, including [DLSS](https://www.nvidia.com/en-us/geforce/news/nvidia-dlss-2-0-a-big-leap-in-ai-rendering/), [real-time ray tracing](https://www.nvidia.com/en-us/geforce/20-series/rtx/) and [VR rendering](https://developer.nvidia.com/vrworks).
 
