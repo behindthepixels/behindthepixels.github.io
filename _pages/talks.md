@@ -11,7 +11,7 @@ excerpt: ''
 ---
 
 ### Revolutionizing Ray Tracing with DLSS 3.5: AI-Powered Ray Reconstruction
-_Game Developers Conference 2020, GPU Technology Conference 2020_
+_High Performace Graphics 2024_
 
 ![](/assets/images/pages/DLSS_RR_HPG.jpg){: .align-left width="600px" }
 NVIDIA's DLSS 3.5 introduces a groundbreaking advancement in ray tracing with its new Ray Reconstruction technology. This AI-powered neural renderer replaces traditional hand-tuned denoisers, significantly enhancing the quality and performance of ray-traced images. By leveraging NVIDIA’s supercomputer-trained AI network, DLSS 3.5 generates higher-quality pixels, improving image sharpness, lighting accuracy, and overall visual fidelity. In this talk, we will delve into the technical intricacies of DLSS 3.5, showcasing how Ray Reconstruction works to deliver superior-quality ray-traced visuals across a variety of applications and games, including Cyberpunk 2077: Phantom Liberty and Portal with RTX. Attendees will learn about the benefits of integrating DLSS 3.5 into their systems, focusing on real-world performance gains and visual improvements.
