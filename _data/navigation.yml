@@ -4,9 +4,9 @@ main:
     url: /about/
   - title: "Talks"
     url: /talks/
-  - title: "Projects"
-    url: /projects/
   - title: "Publications"
     url: /publications/
+  - title: "Projects"
+    url: /projects/
   - title: "Photography"
     url: /photography/
