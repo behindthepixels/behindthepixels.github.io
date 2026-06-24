@@ -10,6 +10,30 @@ excerpt: ''
 
 ---
 
+### PixelDiT: Pixel Diffusion Transformers for Image Generation
+
+**Yongsheng Yu, Wei Xiong, Weili Nie, Yichen Sheng, Shiqiu Liu, Jiebo Luo**
+
+_IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026)_
+
+PixelDiT is a single-stage, end-to-end diffusion transformer that learns directly in pixel space without a VAE or latent-space autoencoder. It uses a dual-level architecture that separates global semantic modeling from pixel-level texture refinement, making high-fidelity pixel-space image generation practical at scale. PixelDiT achieves state-of-the-art results among pixel-space generative models on ImageNet generation, and extends naturally to competitive text-to-image generation at high resolution.
+
+[Project](https://pixeldit.github.io/), [Paper](https://arxiv.org/abs/2511.20645), [Code](https://github.com/NVlabs/PixelDiT)
+
+---
+
+### DLSS 4: Transforming Real-Time Graphics with AI
+
+**NVIDIA Corporation**
+
+_Technical Report, 2025_
+
+DLSS 4 advances real-time neural rendering with Multi Frame Generation, transformer-based Ray Reconstruction, transformer-based Super Resolution, and Reflex Frame Warp. The report discusses the practical challenges of gaming workloads, model architecture choices, real-time inference optimization, and the path from neural rendering research to production graphics technology.
+
+[Technical Report](https://research.nvidia.com/labs/adlr/DLSS4/)
+
+---
+
 ### ExtraNet: Real-time Extrapolated Rendering for Low-latency Temporal Supersampling
 
 **Jie Guo, Xihao Fu, Liqiang Lin, Hengjun Ma, Yanwen Guo, Shiqiu (Edward) Liu, Ling-Qi Yan**
