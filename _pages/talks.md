@@ -20,6 +20,24 @@ NVIDIA's DLSS 3.5 introduces a groundbreaking advancement in ray tracing with it
 
 ---
 
+### Real-Time Path Tracing and Beyond
+_High Performance Graphics 2022 Keynote_
+
+In this keynote, Petrik Clarberg, Simon Kallweit, Craig Kolb, Pawel Kozlowski, Yong He, Lifan Wu, Edward Liu, Benedikt Bitterli, and Matt Pharr present an update on real-time path tracing and the next steps for real-time graphics research. The talk covers a research path tracer capable of complex light transport in large scenes and discusses the remaining research questions toward photorealistic real-time rendering.
+
+[Talk Page](https://research.nvidia.com/publication/2022-07_real-time-path-tracing-and-beyond), [Video Recording](https://youtu.be/au4cPLuEpNM?t=2507)
+
+---
+
+### Research Advances Toward Real-Time Path Tracing
+_Game Developers Conference 2022, GPU Technology Conference 2022_
+
+This talk presents NVIDIA research progress toward real-time path tracing, including systems research, stochastic light sampling, denoising, and performance optimizations for scenes with billions of triangles and millions of light emitters. It also shows how the GeForce SDKs can be integrated into a reference path tracer.
+
+[Talk Page](https://research.nvidia.com/publication/2022-03_research-advances-toward-real-time-path-tracing)
+
+---
+
 ### DLSS 2.0 – Image Reconstruction for Real-Time Rendering with Deep learning
 _Game Developers Conference 2020, GPU Technology Conference 2020_
 

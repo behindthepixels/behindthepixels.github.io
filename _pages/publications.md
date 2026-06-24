@@ -22,6 +22,18 @@ PixelDiT is a single-stage, end-to-end diffusion transformer that learns directl
 
 ---
 
+### SmoothDiffusion-VE: Real-time Generative Video Editing Using Adaptive Feature Cache
+
+**Mustafa Munir, Sophia Zalewski, Shiqiu Liu, David Tarjan, Sushmitha Belede, Anjul Patney, Radu Marculescu**
+
+_IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)_
+
+SmoothDiffusion-VE is a streaming diffusion approach for real-time, temporally consistent video editing. It improves speed and stability with an Adaptive Feature Cache that changes caching behavior based on perceptual frame similarity, plus motion-guided attention that focuses computation on dynamic regions. The method runs at real-time rates on a single RTX 4090 while reducing flicker and temporal artifacts compared with frame-by-frame diffusion editing.
+
+[Paper](https://openaccess.thecvf.com/content/WACV2026/papers/Munir_SmoothDiffusion-VE_Real-time_Generative_Video_Editing_Using_Adaptive_Feature_Cache_WACV_2026_paper.pdf), [Open Access](https://openaccess.thecvf.com/content/WACV2026/html/Munir_SmoothDiffusion-VE_Real-time_Generative_Video_Editing_Using_Adaptive_Feature_Cache_WACV_2026_paper.html)
+
+---
+
 ### DLSS 4: Transforming Real-Time Graphics with AI
 
 **NVIDIA Corporation**
@@ -72,6 +84,16 @@ _Computer Graphics Forum (Proceedings of Eurographics 2021)_
 Real-time ray tracing (RTRT) is being pervasively applied. The key to RTRT is a reliable denoising scheme that reconstructs clean images from significantly undersampled noisy inputs, usually at 1 sample per pixel as limited by current hardware’s computing power. The state of the art reconstruction methods all rely on temporal filtering to find correspondences of current pixels in the previous frame, described using per-pixel screen-space motion vectors. While these approaches are demonstrated powerful, they suffer from a common issue that the temporal information cannot be used when the motion vectors are not valid, i.e. when temporal correspondences are not obviously available or do not exist in theory. We introduce temporally reliable motion vectors that aim at deeper exploration of temporal coherence, especially for the generally-believed difficult applications on shadows, glossy reflections and occlusions, with the key idea to detect and track the cause of each effect. We show that our temporally reliable motion vectors produce significantly better temporal results on a variety of dynamic scenes when compared to the state of the art methods, but with negligible performance overhead.
 
 [Paper](https://sites.cs.ucsb.edu/~lingqi/publications/paper_trmv.pdf), [Video](https://sites.cs.ucsb.edu/~lingqi/publications/video_trmv.mp4)
+
+### Temporally Reliable Motion Vectors for Better Use of Temporal Information
+
+**Zheng Zeng, Shiqiu Liu, Jinglei Yang, Lu Wang, Ling-Qi Yan**
+
+_Ray Tracing Gems II, 2021_
+
+This open-access Ray Tracing Gems II chapter presents temporally reliable motion vectors for deeper use of temporal coherence in real-time ray tracing. It focuses on difficult effects such as shadows, glossy reflections, and occlusions, and explains how the motion-vector formulation can improve temporal reuse with negligible runtime overhead.
+
+[Chapter](https://link.springer.com/chapter/10.1007/978-1-4842-7185-8_25), [PDF](https://sites.cs.ucsb.edu/~lingqi/publications/rtg2_ch25.pdf)
 
 ### Neural FFTs for Universal Texture Image Synthesis
 
