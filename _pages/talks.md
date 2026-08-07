@@ -13,6 +13,7 @@ excerpt: ''
 ### Next Era of Graphics: Neural Rendering, World Models & Simulation
 _SIGGRAPH 2026 Keynote_
 
+![](/assets/images/pages/DLSS5_SIGGRAPH2026.jpg){: .align-left width="360px" }
 In this SIGGRAPH 2026 keynote, Edward Liu, Neil Ashton, and Ming-Yu Liu from NVIDIA Research present the latest advances at the intersection of generative AI and real-time graphics. Edward's portion covers DLSS 5 Neural Rendering — a generative enrichment layer added at the end of the standard game rendering pipeline that uses 3D-guided neural rendering to improve materials, shadows, reflections, ambient occlusion, subsurface scattering, and lighting interactions. The system achieves 4K life-like visuals in real time on a single RTX 50-series GPU while giving artists direct control to "direct the final frame" with temporal stability across shots.
 
 [Video Recording](https://www.youtube.com/watch?v=8X0uDU6Ru3w)
